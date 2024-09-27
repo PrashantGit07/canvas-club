@@ -4,7 +4,8 @@ import Image from 'next/image';
 
 const MainContent = () => {
     return (
-        <main className="flex items-center justify-center min-h-screen px-5 md:px-12 lg:px-28">
+        <main className="flex items-center justify-center min-h-screen px-5 md:px-12 lg:px-28
+        bg-gradient-to-l from-gray-200 via-blue-100 to-stone-100">
             <div className="flex flex-col md:flex-row items-center text-center md:text-left py-10">
                 <div className="flex-1 mb-8 md:mb-0 md:pr-8">
                     <button className="text-2xl underline lg:text-4xl text-blue-800 mb-4 drop-shadow-lg">
