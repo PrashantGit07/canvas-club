@@ -30,10 +30,11 @@ body {
 /* styles.css */
 @keyframes gradient-flow {
   0% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
+
   100% {
-      background-position: 100% 50%;
+    background-position: 100% 50%;
   }
 }
 
@@ -45,7 +46,3 @@ body {
 .card:hover {
   animation: gradient-flow 3s ease infinite;
 }
-
-
-/* styles.css */
- 

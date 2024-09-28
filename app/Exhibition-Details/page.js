@@ -2,10 +2,10 @@
 
 import React from 'react';
 import Image from 'next/image'; // Assuming you'll be using an image for reports or categories
-import music from "../assets/music.jpg"
-import sketch from "../assets/sketch.jpg"
+import music from "../assets/music-new.jpg"
+import sketch from "../assets/sketch-new.jpg"
 import poetry from "../assets/poetry.jpg"
-import painting from "../assets/painting.jpg"
+import painting from "../assets/painting-new.jpg"
 
 const ExhibitionDetails = () => {
     return (
@@ -27,7 +27,7 @@ const ExhibitionDetails = () => {
                     </div>
 
                     <div className="absolute bottom-0 left-0 w-full p-5 bg-white bg-opacity-90 rounded-tl-xl transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out">
-                        <p className="text-md opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
+                        <p className="text-md text-gray-800 !important opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
                             Show your creativity with colors! Participate in the Painting category and express your imagination on canvas. Whether you're a seasoned artist or just starting, this is your chance to showcase your masterpieces.
                         </p>
                     </div>
@@ -48,7 +48,7 @@ const ExhibitionDetails = () => {
                     </div>
 
                     <div className="absolute bottom-0 left-0 w-full p-5 bg-white bg-opacity-90 rounded-tl-xl transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out">
-                        <p className="text-md opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
+                        <p className="text-md text-gray-800 !important opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
                             Pencil and paper are all you need to create amazing art! Participate in the Sketching category and display your drawing skills. It's time to bring your ideas to life with sharp lines and delicate shading.
                         </p>
                     </div>
@@ -69,7 +69,7 @@ const ExhibitionDetails = () => {
                     </div>
 
                     <div className="absolute bottom-0 left-0 w-full p-5 bg-white bg-opacity-90 rounded-tl-xl transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out">
-                        <p className="text-md opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
+                        <p className="text-md text-gray-800 !important opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
                             Unleash your musical talent in the Music category! Whether you play an instrument or sing, this category is for artists who want to mesmerize the audience with their musical skills and performances.
                         </p>
                     </div>
@@ -90,7 +90,7 @@ const ExhibitionDetails = () => {
                     </div>
 
                     <div className="absolute bottom-0 left-0 w-full p-5 bg-white bg-opacity-90 rounded-tl-xl transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out">
-                        <p className="text-md opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
+                        <p className="text-md text-gray-800 !important opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
                             Have a way with words? The Poetry category is perfect for those who want to express emotions, thoughts, and stories through the art of words. Showcase your talent in front of an appreciative audience.
                         </p>
                     </div>
@@ -125,26 +125,7 @@ const ExhibitionDetails = () => {
                 </ul>
             </div>
 
-            {/* <div className="mt-10 p-6 bg-white rounded-lg shadow-md bg-gradient-to-l from-gray-200 via-blue-100 to-pink-200">
-                <h3 className="text-2xl font-semibold text-pink-900 mb-4">How to Apply</h3>
-                <ul className="list-disc list-inside space-y-2 cursor-pointer">
-                    <li className="transition-transform transform hover:translate-y-[-5px] duration-300 text-blue-600 hover:text-black">
-                        Click on the register button.
-                    </li>
-                    <li className="transition-transform transform hover:translate-y-[-5px] duration-300 text-blue-600 hover:text-black">
-                        Fill the details correctly and manually.
-                    </li>
-                    <li className="transition-transform transform hover:translate-y-[-5px] duration-300 text-blue-600 hover:text-black">
-                        Upload a good quality picture of your artworks.
-                    </li>
-                    <li className="transition-transform transform hover:translate-y-[-5px] duration-300 text-blue-600 hover:text-black">
-                        Upload the payment receipt.
-                    </li>
-                    <li className="transition-transform transform hover:translate-y-[-5px] duration-300 text-blue-600 hover:text-black">
-                        Enter valid contact details.
-                    </li>
-                </ul>
-            </div> */}
+
             <div className="mt-10 p-6 rounded-lg shadow-md transition-all duration-300 card">
                 <h3 className="text-2xl font-semibold text-pink-900 mb-4 underline">How to Apply</h3>
                 <ul className="list-disc list-inside space-y-2 cursor-pointer">

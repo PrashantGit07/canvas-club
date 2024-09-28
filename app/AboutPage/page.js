@@ -1,99 +1,35 @@
-// "use client"
-
-// import React from "react";
-// import contactImg from "../assets/galary.jpg"
-// import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTwitter, FaWhatsapp } from "react-icons/fa";
-// import Image from "next/image";
-// import { motion } from 'framer-motion'
-
-// const About = () => {
-//     return (
-//         <div className=" h-screen">
-//             <div className="flex flex-col md:flex-row sm:flex-row h-auto w-full items-center justify-end mt-5   mx-auto   md:w-[75%] sm:w-[90%] bg-white hello  fiction-section   lg:mt-[50px] sm:mt-[150px] md:mt-[200px] custom-media-query">
-
-//                 <div>
-//                     <Image src={contactImg} alt="contact" className=" rounded-lg" />
-//                 </div>
-
-//                 <motion.div
-//                     initial={{ x: '100vw' }}
-//                     animate={{ x: 0 }}
-//                     transition={{ delay: 1, type: 'spring' }}
-//                     className=" border-2 rounded-2xl w-full h-auto    p-10 flex flex-col gap-4 m-5  hello
-// "
-//                 >
-//                     <h1 className="font-semibold text-3xl md:text-4xl mb-4 text-center">
-//                         CONTACT
-//                     </h1>
-//                     <div className=" w-full h-[2px] bg-fuchsia-600"></div>
-//                     <p className="font-semibold  atext-xl md:text-2xl mb-4 text-center text-[#9b5d26]">
-//                         Let's collaborate and <span className=" text-[#82E0AA]"> grow</span>,
-//                         So we can co-create a better{" "}
-//                         <span className=" text-[#82E0AA]">tomorrow</span>{" "}
-//                     </p>
-//                     <div className=" flex flex-row gap-5">
-//                         <div className="flex h-[60px] w-[60px] rounded-full bg-white text-gray-600 hover:text-blue-900 items-center justify-center mx-0 my-0 hover:bg-white">
-//                             <a
-//                                 href="https://www.linkedin.com/in/prashant-mishra-050a48236"
-//                                 target="_blank"
-//                                 rel="noopener noreferrer"
-//                             >
-//                                 <FaFacebook className="h-8 w-8" />
-//                             </a>
-//                         </div>
-
-//                         <div className="font-bold">
-//                             Facebook
-//                             <p className="opacity-50 ">Canvas Club</p>
-//                         </div>
-//                     </div>
-
-
-
-//                     <div className=" flex flex-row gap-5">
-//                         <div className="flex h-[60px] w-[60px] rounded-full bg-white text-gray-600 hover:text-blue-900 items-center justify-center mx-0 my-0 hover:bg-white">
-//                             <a
-//                                 href="https://twitter.com"
-//                                 target="_blank"
-//                                 rel="noopener noreferrer"
-//                             >
-//                                 <FaInstagram className="h-8 w-8"></FaInstagram>
-//                             </a>
-//                         </div>
-//                         <div className=" font-bold">
-//                             Instagram
-//                             <p className=" opacity-50">Canvas Club</p>
-//                         </div>
-//                     </div>
-
-//                     <div className=" flex flex-row gap-5">
-//                         <div className="flex h-[60px] w-[60px] rounded-full bg-white text-gray-600 hover:text-blue-900 items-center justify-center mx-0 my-0 hover:bg-white">
-//                             <FaWhatsapp className="h-8 w-8"></FaWhatsapp>
-//                         </div>
-//                         <div className=" font-bold">
-//                             Whatsapp
-//                             <p className=" opacity-50">+91 7985466401</p>
-//                         </div>
-//                     </div>
-
-//                     <div className=" w-full h-[2px] bg-fuchsia-600"></div>
-//                 </motion.div>
-
-//             </div>
-
-//         </div>
-//     );
-// };
-
-// export default About;
-import React from 'react'
+"use client";
+import React from 'react';
+import { motion } from 'framer-motion';
 
 const AboutPage = () => {
+    const text = "Hi! This is Canvas Club Family.";
+
     return (
-        <div>
-            About us
+        <div className='bg-gradient-to-l from-gray-400 via-blue-100 to-stone-100 p-0'>
+            <div className="flex flex-col items-center justify-start h-screen">
+                <div className="mt-20"> {/* Adjust the margin to move the text down from the top */}
+                    <p className="text-5xl text-black !important">
+                        {text.split("").map((char, index) => (
+                            <motion.span
+                                key={index}
+                                initial={{ scale: 2, opacity: 0 }} // Start large and transparent
+                                animate={{ scale: 1, opacity: 1 }} // Animate to normal size and visible
+                                transition={{
+                                    delay: index * 0.05, // Faster animation by reducing delay
+                                    type: "spring",
+                                    stiffness: 200,
+                                    damping: 10,
+                                }}
+                            >
+                                {char}
+                            </motion.span>
+                        ))}
+                    </p>
+                </div>
+            </div>
         </div>
-    )
+    );
 }
 
-export default AboutPage
+export default AboutPage;
